@@ -1,0 +1,288 @@
+
+
+Word Specification Sample
+
+Working Draft 04, 16 August 2002
+
+Document identifier:
+
+wd-spectools-word-sample-04
+
+Location:
+
+http://www.oasis-open.org/spectools/docs/
+Editor:
+
+[List your editors here; check whether “Editor” header should be plural]
+
+Eve Maler, Sun Microsystems <eve.maler@sun.com>
+
+Contributors:
+
+[List your contributors here]
+
+[Optionally list them in the Acknowledgments appendix instead]
+
+Karl Best, OASIS
+
+Norman Walsh, Sun Microsystems
+
+Abstract:
+
+[Supply your own summary of the technical purpose of the document.] This document provides a working MS Word 2000 sample from which you can start editing your own OASIS-published document. Instructions are provided as italic text in brackets, which should be deleted before publication. Full instructions are provided in the body of the document.
+
+Status:
+
+[Describe the status and stability of the specification and where to send comments.] This document is updated periodically on no particular schedule. Send comments to the editor.
+[This is boilerplate; to use, fix the hyperlinks:] Committee members should send comments on this specification to the xxx@lists.oasis-open.org list. Others should subscribe to and send comments to the xxx-comment@lists.oasis-open.org list. To subscribe, send an email message to xxx-comment-request@lists.oasis-open.org with the word "subscribe" as the body of the message.
+
+[This is boilerplate; to use, fix the hyperlinks:] For information on whether any patents have been disclosed that may be essential to implementing this specification, and any offers of patent licensing terms, please refer to the Intellectual Property Rights section of the XXX TC web page (http://www.oasis-open.org/committees/xxx/).
+
+[If a Committee Specification or OASIS Standard:] The errata page for this specification is at http://www.oasis-open.org/committees/xxx/yyy.
+
+Table of Contents
+
+3Introduction
+
+
+31.1 Terminology
+
+
+42
+Word Styles
+
+
+42.1 Overall Style
+
+
+42.2 Title Page
+
+
+42.3 Headings
+
+
+42.4 Paragraphs
+
+
+42.5 Lists
+
+
+52.6 Tables
+
+
+52.7 Code Examples
+
+
+52.8 Character Styles
+
+
+63
+References
+
+
+63.1 Normative
+
+
+7Appendix A. Acknowledgments
+
+
+8Appendix B. Revision History
+
+
+9Appendix C. Notices
+
+
+
+
+Introduction
+
+[Provide an introductory chapter, indicating if any parts of it are non-normative.]
+
+1.1 Terminology
+
+[The following is boilerplate. Most specifications will need this and the corresponding bibliography entry.] The key words must, must not, required, shall, shall not, should, should not, recommended, may, and optional in this document are to be interpreted as described in [RFC2119].
+
+2 Word Styles
+
+[This section is provided to explain and demonstrate the styles available in the Word template attached to this sample document. It is important to use the styles provided in the template consistently and to avoid defining new styles or using raw formatting.
+
+Delete this entire section when using this sample document to begin writing a new specification.]
+2.1 Overall Style
+
+The paper size is set to Letter, which is 8 ½ x 11. You may change this to A4 or whatever other size suits your needs.
+
+The document identifier and publication date information in the footer needs to be updated every time you publish.
+
+Line numbers are enabled by default for easy reference by specification commenters. You may turn line numbering off.
+
+2.2 Title Page
+
+The title page is designed to fit a lot of metadata compactly. If you wish to create a “true” title page, you may insert a page break after the subtitle.
+
+2.3 Headings
+
+Heading 1 through Heading 9 and AppendixHeading have been defined with a special appearance. Headings are numbered and appear in the Table of Contents. Pressing Return after a heading inserts a Normal paragraph style directly after.
+
+This template sets Heading 1 and AppendixHeading to start on a new page. You may set the Heading 1 style not to start on a new page if you wish. Major headings have a horizontal rule above them.
+
+2.4 Paragraphs
+
+The font in the Normal paragraph style is 10-pt Arial. You may change this to 11-pt Times New Roman if you prefer a serif font; changing these two settings should change all the other relevant styles.
+
+2.5 Lists
+
+The Definition term and Definition paragraph styles are defined specially for this template. They produce a definition list with a hanging appearance. Pressing Return after one inserts the other directly after.
+
+Definition term
+
+Definition for the term.
+
+Use List bullet for first-level bulleted lists. Use List bullet 2 for second-level bulleted lists. Use List continue for continued paragraphs in list items.
+
+· List bullet
+
+List continue.
+
+· List bullet 2
+
+List continue 2.
+
+For bibliography lists, use the Ref paragraph style.  Use the Ref term character style for the bracketed text that serves as the bibliography entry key, and make each reference term into a bookmark for use as references from the text. For example, [RFC2119] is a generated cross-reference to the IETF RFC 2119 bibliography entry in Section 3.1 of this sample.
+
+2.6 Tables
+
+Use the following style for most tables: [To be supplied; suggestions welcome!]
+2.7 Code Examples
+
+For schema code and other normative code, use the Code paragraph style. It fits 71 characters. For example:
+
+12345678901234567890123456789012345678901234567890123456789012345678901
+
+         1         2         3         4         5         6         7
+
+<simpleType name="DecisionType">
+    <restriction base="string">
+        <enumeration value="Permit"/>
+        <enumeration value="Deny"/>
+        <enumeration value="Indeterminate"/>
+    </restriction>
+</simpleType>
+
+Use the Code small style if the code has very long lines. It fits 80 characters. For example:
+
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+
+         1         2         3         4         5         6         7         8
+
+<simpleType name="DecisionType">
+    <restriction base="string">
+        <enumeration value="Permit"/>
+        <enumeration value="Deny"/>
+        <enumeration value="Indeterminate"/>
+    </restriction>
+</simpleType>
+
+For non-normative examples, use the Example paragraph style. For example:
+
+GET http://<host name and path>?TARGET=<Target>...<HTTP-Version>
+
+<other HTTP 1.0 or 1.1 components>
+
+Use the Example small style if the example has very long lines. For example:
+
+GET http://<host name and path>?TARGET=<Target>...<HTTP-Version>
+
+<other HTTP 1.0 or 1.1 components>
+
+2.8 Character Styles
+
+This template defines several character styles for general text use:
+
+· Element style (shortcut Ctrl-Shift-E) for <NativeElement> names and <ns:ForeignElement> names; add the angle brackets yourself
+
+· Attribute style (shortcut Ctrl-Shift-A) for attributeNames
+· Datatype style (shortcut Ctrl-Shift-Alt-D) for DataType names
+
+· Keyword style (shortcut Ctrl-Shift-K) for OtherKeyword names
+
+· Variable style (shortcut Ctrl-Shift-Alt-V) for variable names
+
+3 References
+
+3.1 Normative
+
+[RFC2119]
+S. Bradner, Key words for use in RFCs to Indicate Requirement Levels, http://www.ietf.org/rfc/rfc2119.txt, IETF RFC 2119, March 1997.
+
+Appendix A. Acknowledgments
+
+The following individuals were members of the committee during the development of this specification:
+
+· Jane Doe, Example Corp.
+
+· A. Nonymous (chair), Example Corp.
+
+· John Smith, Example Corp.
+
+· Karl Best, OASIS
+
+· John Doe, Other Examples, Inc.
+
+· Eve Maler, Sun Microsystems
+
+· Norman Walsh, Sun Microsystems
+
+In addition, the following people made contributions to this specification:
+
+· Joe Blow, Example Corp.
+
+Appendix B. Revision History
+
+[This appendix is optional, but helpful. It should be removed for specifications that are at OASIS Standard level.]
+
+	Rev
+	Date
+	By Whom
+	What
+
+	wd-00
+	2002-04-26
+	Eve Maler
+	Initial version
+
+	wd-03
+	2002-06-12
+	Eve Maler
+	Incorporates decision to put IPR boilerplate in the Status section and comments from Drummond Group.
+
+	Wd-04
+	2002-08-16
+	Eve Maler
+	Updated the copyright statements to meet legal requirements.
+
+
+Appendix C. Notices
+
+OASIS takes no position regarding the validity or scope of any intellectual property or other rights that might be claimed to pertain to the implementation or use of the technology described in this document or the extent to which any license under such rights might or might not be available; neither does it represent that it has made any effort to identify any such rights. Information on OASIS's procedures with respect to rights in OASIS specifications can be found at the OASIS website. Copies of claims of rights made available for publication and any assurances of licenses to be made available, or the result of an attempt made to obtain a general license or permission for the use of such proprietary rights by implementors or users of this specification, can be obtained from the OASIS Executive Director.
+
+OASIS invites any interested party to bring to its attention any copyrights, patents or patent applications, or other proprietary rights which may cover technology that may be required to implement this specification. Please address the information to the OASIS Executive Director.
+
+Copyright  © OASIS Open 2002. All Rights Reserved.
+This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself does not be modified in any way, such as by removing the copyright notice or references to OASIS, except as needed for the purpose of developing OASIS specifications, in which case the procedures for copyrights defined in the OASIS Intellectual Property Rights document must be followed, or as required to translate it into languages other than English.
+
+The limited permissions granted above are perpetual and will not be revoked by OASIS or its successors or assigns.
+
+This document and the information contained herein is provided on an “AS IS” basis and OASIS DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+Copyright © 2002 OASIS. All rights reserved.
+
+Page 1 of 1
+2
+wd-spectools-word-sample-03
+
+12 June 2002
+
+Copyright © OASIS Open 2002. All Rights Reserved.
+
+Page 1 of 9
+
