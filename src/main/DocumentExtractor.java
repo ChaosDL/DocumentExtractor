@@ -22,16 +22,15 @@ public class DocumentExtractor {
 		// TODO Auto-generated method stub
 		tika = new Tika();
 		text = "";
-	JFrame frame = new JFrame();
-	frame.setSize(300, 300);
-	  JPanel  myPanel = new JPanel();
-	  myPanel.setSize(300, 300);
-	  System.out.println("asd");
-      frame.add(myPanel);
-	  frame.setVisible(true);
-	  new  FileDrop( myPanel, new FileDrop.Listener()
-	  {   public void  filesDropped( java.io.File[] files )
-	      {   
+		JFrame frame = new JFrame();
+		frame.setSize(300, 300);
+		JPanel  myPanel = new JPanel();
+		myPanel.setSize(300, 300);
+      		frame.add(myPanel);
+		frame.setVisible(true);
+		new  FileDrop( myPanel, new FileDrop.Listener()
+		{   public void  filesDropped( java.io.File[] files )
+	    		{   
 				System.out.println("waiting");
 			  	for(File f : files){
 			  		try {
@@ -43,8 +42,8 @@ public class DocumentExtractor {
 					}
 			  	}
 				System.out.println("done");
-	      }   // end filesDropped
-	  }); // end FileDrop.Listener
+	      		}   // end filesDropped
+	  	}); // end FileDrop.Listener
 	}
 	private static String parseToString(File file) throws IOException, SAXException, TikaException{
 		return tika.parseToString(file);
